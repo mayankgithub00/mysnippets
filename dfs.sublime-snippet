@@ -1,0 +1,21 @@
+<snippet>
+	<content><![CDATA[
+ vi adj[MX];
+ vi vis(MX);
+ void dfs(int S)
+ {
+ 	vis[S]=1;
+ 	for(auto& i:adj[S])
+ 	{
+ 		if(!vis[i])
+ 		{
+ 			dfs(i);
+ 		}
+ 	}
+ }
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>dfs</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>
